@@ -1,0 +1,186 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+
+
+
+
+
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Alinea los botones hacia arriba */
+    height: 100vh;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px; /* Ajusta este valor para bajar los botones */
+}
+
+.media-container {
+    display: none;
+}
+
+.media-container img {
+    border: 4px solid #000;
+    max-width: 750px;
+    max-height: 950px;
+}
+
+.media-container video {
+    border: 2px solid #000;
+    max-width: 300px;
+    max-height: 400px;
+}
+
+.media-container audio {
+    border: 2px solid #000;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.banner {
+    display: flex;
+    gap: 10px;
+}
+
+.banner img {
+    max-width: 400px; /* Ajusta este valor para cambiar el ancho máximo */
+    max-height: 400px; /* Ajusta este valor para cambiar la altura máxima */
+    width: auto; /* Mantiene la proporción del ancho */
+    height: auto; /* Mantiene la proporción de la altura */
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #252121;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #746363;
+}
+
+
+
+
+
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: absolute;
+    width: 100%;
+    top: 700px;
+}
+
+/* Estilos para el contenido del footer */
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos para los botones de redes sociales */
+.social-icons {
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* Estilos para los enlaces en el footer */
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilos para los enlaces en el hover */
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos CSS para los botones de men� */
+.menu {
+    display: flex;
+}
+
+.menu-button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    margin-right: 10px;
+}
+
+.menu-button:last-child {
+    margin-right: 0;
+}
+
+/* Estilos CSS para las im�genes */
+.image-container {
+    text-align: center;
+    
+}
+
+.image {
+    display: none;
+
+}
+
+.image.active {
+    display: block;
+}
