@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My VIDAZEN Page</title>
+    <link rel="stylesheet" href="./Proyecto.ING.css">
+</head>
+<body>
+    <header>
+        <h1>Project</h1>
+        <nav>
+            <ul>
+                <li><a href="./inicio.ING.html">Home</a></li>
+                <li><a href="./Contenido.ING.html">Content</a></li>
+                <li><a href="./Proyecto.ING.html">Project</a></li>
+                <li><a href="./Solucion Tecnologica.ING.html">Technological Solution</a></li>
+                <li><a href="./Evidencias.ING.html">Evidence</a></li>
+            </ul>
+        </nav>
+    </header>
+    <button class="button" onclick="toggleIframe('iframe1')">Formulation</button>
+    <button class="button" onclick="toggleIframe('iframe2')">Theoretical Framework</button>
+    <button class="button" onclick="toggleIframe('iframe3')">Legal Framework</button>
+    <button class="button" onclick="toggleIframe('iframe4')">Schedule</button>
+    <div class="scroll-container">
+        <div id="iframe1" class="iframe-container">
+            <iframe src="./Formulacion.ING.pdf" width="100%" height="400"></iframe>
+        </div>
+        <div id="iframe2" class="iframe-container">
+            <iframe src="./Marco Terico.ING.pdf" width="100%" height="400"></iframe>
+        </div>
+        <div id="iframe3" class="iframe-container">
+            <iframe src="./Marco Legal.ING.pdf" width="100%" height="400"></iframe>
+        </div>
+        <div id="iframe4" class="iframe-container">
+            <iframe src="./Cronograma.ING.pdf" width="100%" height="400"></iframe>
+        </div>
+    </div>
+    <script>
+        function toggleIframe(id) {
+            var iframeContainers = document.querySelectorAll('.iframe-container');
+            iframeContainers.forEach(function(container) {
+                if (container.id !== id) {
+                    container.style.display = 'none';
+                }
+            });
+            var iframeContainer = document.getElementById(id);
+            if (iframeContainer.style.display === "none" || iframeContainer.style.display === "") {
+                iframeContainer.style.display = "block";
+            } else {
+                iframeContainer.style.display = "none";
+            }
+        }
+    </script>
+</body>
+<footer>
+    <div class="footer-content"></div>
+    <div class="social-icons">
+        <a href="https://m.facebook.com/profile.php?id=61566500465983"><img src="./facebook.png" alt="Facebook"></a>
+        <a href="https://x.com/Vidazen233931"><img src="./x.png" alt="X"></a>
+        <a href="https://www.instagram.com/vidazen73/"><img src="./Instagram.webp" alt="Instagram"></a>
+    </div>
+    <p>&copy; 2024 VIDAZEN. All rights reserved. |</p>
+</footer>
+</html>

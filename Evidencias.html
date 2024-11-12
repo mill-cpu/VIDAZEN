@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página VIDAZEN</title>
+    <link rel="stylesheet" href="./Evidencias.css">
+</head>
+<body>
+    <header>
+        <h1>Evidencias</h1>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./Contenido.html">Contenido</a></li>
+                <li><a href="./Proyecto.html">Proyecto</a></li>
+                <li><a href="./Solucion Tecnologica.html">Solucion tecnologica</a></li>
+                <li><a href="./Evidencias.html">Evidencias</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content">
+        <div class="button-container">
+            <button class="button" onclick="toggleMedia('banner')">Fotos</button>
+            <button class="button" onclick="toggleMedia('vid1')">Video</button>
+            <button class="button" onclick="toggleMedia('link')">Encuesta</button>
+            <button class="button" onclick="toggleMedia('podcast')">Podcast</button>
+        </div>
+    
+        <div id="banner" class="media-container">
+            <div class="banner">
+                <img src="./Evidencia1.jpg" alt="Imagen 1">
+                <img src="./Evidencia2.jpg" alt="Imagen 2">
+                <img src="./Evidencia3.jpg" alt="Imagen 3">
+            </div>
+        </div>
+        <div id="vid1" class="media-container">
+            <video controls>
+                <source src="./VID-20240912-WA0016.mp4" type="video/mp4">
+                Tu navegador no soporta la etiqueta de video.
+            </video>
+        </div>
+        
+        <div id="link" class="media-container">
+            <a href="https://forms.gle/nPDvfB9wsbqEqprT8" target="_blank">Visita nuestra Encuesta.</a>
+            <img src="./WhatsApp Image 2024-11-12 at 7.53.52 AM (1).jpeg" alt="Imagen 4">
+            <img src="./WhatsApp Image 2024-11-12 at 7.53.52 AM (2).jpeg" alt="Imagen 5">
+        </div>
+    
+        <div id="podcast" class="media-container">
+            <audio controls>
+                <source src="./LAURA.mp4" type="audio/mpeg">
+                Tu navegador no soporta la etiqueta de audio.
+            </audio>
+            <audio controls>
+                <source src="./ANDERSON.mp4" type="audio/mpeg">
+                Tu navegador no soporta la etiqueta de audio.
+            </audio>
+        </div>
+    </div>
+    
+    
+<script>
+    function toggleMedia(id) {
+        var mediaContainers = document.querySelectorAll('.media-container');
+        mediaContainers.forEach(function(container) {
+            if (container.id !== id) {
+                container.style.display = 'none';
+            }
+        });
+    
+        var mediaContainer = document.getElementById(id);
+        if (mediaContainer.style.display === "none" || mediaContainer.style.display === "") {
+            mediaContainer.style.display = "block";
+        } else {
+            mediaContainer.style.display = "none";
+        }
+    }
+    
+</script>
+
+
+</body>
+<footer>
+    <div class="footer-content"></div>
+    <div class="social-icons">
+        <a href="https://m.facebook.com/profile.php?id=61566500465983"><img src="./facebook.png" alt="Facebook"></a>
+        <a href="https://x.com/Vidazen233931"><img src="./x.png" alt="X"></a>
+        <a href="https://www.instagram.com/vidazen73/"><img src="./Instagram.webp" alt="Instagram"></a>
+    </div>
+    <p>&copy; 2024 VIDAZEN. Todos los derechos reservados. |</p>
+</footer>
+</html>

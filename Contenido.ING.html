@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My VIDAZEN Page</title>
+    <link rel="stylesheet" href="./Contenido.ING.css">
+</head>
+<body>
+    <header>
+        <h1>Content</h1>
+        <nav>
+            <ul>
+                <li><a href="./inicio.ING.html">Home</a></li>
+                <li><a href="./Contenido.ING.html">Content</a></li>
+                <li><a href="./Proyecto.ING.html">Project</a></li>
+                <li><a href="./Solucion Tecnologica.ING.html">Technological Solution</a></li>
+                <li><a href="./Evidencias.ING.html">Evidence</a></li>
+            </ul>
+        </nav>
+    </header>
+    <button class="button" onclick="toggleImage('img1')">Mission</button>
+    <button class="button" onclick="toggleImage('img2')">Vision</button>
+    <button class="button" onclick="toggleImage('img3')">Corporate Values</button>
+    <div id="img1" class="image-container">
+        <img src="./MISION.ING.JPG" alt="Image 1">
+    </div>
+    <div id="img2" class="image-container">
+        <img src="./VISION.ING.JPG" alt="Image 2">
+    </div>
+    <div id="img3" class="image-container">
+        <img src="./VALORES.ING.JPG" alt="Image 3">
+    </div>
+    <script>
+        function toggleImage(id) {
+            var imgContainers = document.querySelectorAll('.image-container');
+            imgContainers.forEach(function(container) {
+                if (container.id !== id) {
+                    container.style.display = 'none';
+                }
+            });
+            var imgContainer = document.getElementById(id);
+            if (imgContainer.style.display === "none" || imgContainer.style.display === "") {
+                imgContainer.style.display = "block";
+            } else {
+                imgContainer.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br><br>
+<br>
+<br>
+<br><br>
+<br>
+<br>
+<br><br>
+<br>
+<br>
+<br><br>
+<br>
+<br>
+<br>
+<footer>
+    <div class="footer-content"></div>
+    <div class="social-icons">
+        <a href="https://m.facebook.com/profile.php?id=61566500465983"><img src="./facebook.png" alt="Facebook"></a>
+        <a href="https://x.com/Vidazen233931"><img src="./x.png" alt="X"></a>
+        <a href="https://www.instagram.com/vidazen73/"><img src="./Instagram.webp" alt="Instagram"></a>
+    </div>
+    <p>&copy; 2024 VIDAZEN. All rights reserved. |</p>
+</footer>
+</html>
